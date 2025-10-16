@@ -1,0 +1,28 @@
+int main ()
+{
+ int A, B, C, i,n=0;
+  A = 0;
+  B = 10;
+  C = B - A;
+  i = 1;
+       while (i <= 10)
+      {
+        n++;
+        if (C > A)
+        {
+           C = C - 2;
+           i++;
+        }
+        else
+        {
+          i += 2;
+          B = C % i;
+        }
+        A = A + i;
+        printf("Ciclo %d",n);
+        printf ("A = %d\n", A);
+        printf ("B = %d\n", B);
+        printf ("C = %d\n", C);
+        printf ("i =%d\n", i);
+      }
+}
